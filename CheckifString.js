@@ -1,4 +1,8 @@
 function isNumber(str) {
-    if (str.trim() === "") return false;
-    return !isNaN(str);
+    return !isNaN(str) && str.trim() !== "";
 }
+
+// Test cases
+console.log(isNumber("123"));    // true
+console.log(isNumber("12.34"));  // true
+console.log(isNumber("abc"));    // false
