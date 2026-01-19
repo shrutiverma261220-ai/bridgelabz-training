@@ -1,3 +1,4 @@
 function isNumber(str) {
-    return !isNaN(str) && str.trim() !== "";
+    if (str.trim() === "") return false;
+    return !isNaN(str);
 }
